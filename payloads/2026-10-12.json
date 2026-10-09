@@ -1,0 +1,107 @@
+{
+ "date": "2026-10-12",
+ "item": 4,
+ "uuids": {
+  "ig_tiktok": "5306230070200978186",
+  "facebook": "-1701756777275831265",
+  "pinterest": "8855022634945036938"
+ },
+ "ig_tiktok": {
+  "autoPublish": true,
+  "descendants": [],
+  "draft": false,
+  "hasNotReadNotes": false,
+  "shortener": false,
+  "smartLinkData": {
+   "ids": []
+  },
+  "media": [
+   "https://raw.githubusercontent.com/dnbtk8fpz7-wq/icona-vintage-media/icona-assets/icona-assets/item04-dior-platform-boots_reel-9x16-music.mp4"
+  ],
+  "mediaAltText": [],
+  "providers": [
+   {
+    "network": "instagram"
+   },
+   {
+    "network": "tiktok"
+   }
+  ],
+  "publicationDate": {
+   "dateTime": "2026-10-12T10:00:00",
+   "timezone": "Europe/Madrid"
+  },
+  "text": "Botines plataforma de Christian Dior en piel calada, talla 38,5 🖤\nPieza única · 600 €\n📍 Carrer del Músic Padilla, 2 (Ruzafa), Valencia\n🕙 Abrimos todos los días de 10:00 a 20:00.\nHoy es festivo y abrimos igualmente de 10:00 a 20:00.\nReserva por DM o cómpralo en Vinted (link en nuestra bio).\n\n#diorvintage #botinesvintage #modavintage #iconavintage #vintagevalencia #ruzafa #segundamanovalencia",
+  "instagramData": {
+   "type": "REEL",
+   "showReelOnFeed": true
+  },
+  "tiktokData": {
+   "privacyOption": "PUBLIC_TO_EVERYONE",
+   "disableComment": false,
+   "disableDuet": false,
+   "disableStitch": false,
+   "title": "Botines plataforma de Christian Dior en piel calada, talla 38,5 🖤 Solo 600 €"
+  }
+ },
+ "facebook": {
+  "autoPublish": true,
+  "descendants": [],
+  "draft": false,
+  "hasNotReadNotes": false,
+  "shortener": false,
+  "smartLinkData": {
+   "ids": []
+  },
+  "media": [
+   "https://raw.githubusercontent.com/dnbtk8fpz7-wq/icona-vintage-media/icona-assets/icona-assets/item04-dior-platform-boots_reel-9x16-music.mp4"
+  ],
+  "mediaAltText": [],
+  "providers": [
+   {
+    "network": "facebook"
+   }
+  ],
+  "publicationDate": {
+   "dateTime": "2026-10-12T10:00:00",
+   "timezone": "Europe/Madrid"
+  },
+  "text": "Botines plataforma de Christian Dior en piel calada, talla 38,5 🖤\nPieza única · 600 €\n📍 Carrer del Músic Padilla, 2 (Ruzafa), Valencia\n🕙 Abrimos todos los días de 10:00 a 20:00.\nHoy es festivo y abrimos igualmente de 10:00 a 20:00.\nCómpralo en Vinted: https://www.vinted.es/items/10309553952-christian-dior-laser-cut-leather-platform-ankle-boots-size-385\nO escríbenos por mensaje para reservarlo.",
+  "facebookData": {
+   "type": "REEL",
+   "title": "Christian Dior · 600 €"
+  }
+ },
+ "pinterest": {
+  "autoPublish": true,
+  "descendants": [],
+  "draft": false,
+  "hasNotReadNotes": false,
+  "shortener": false,
+  "smartLinkData": {
+   "ids": []
+  },
+  "media": [
+   "https://raw.githubusercontent.com/dnbtk8fpz7-wq/icona-vintage-media/icona-assets/icona-assets/item04-dior-platform-boots_pin-2x3.jpg"
+  ],
+  "mediaAltText": [
+   "Botines Christian Dior vintage de plataforma en piel calada, talla 38,5, 600 €"
+  ],
+  "providers": [
+   {
+    "network": "pinterest"
+   }
+  ],
+  "publicationDate": {
+   "dateTime": "2026-10-12T18:00:00",
+   "timezone": "Europe/Madrid"
+  },
+  "text": "Botines de plataforma Christian Dior en piel calada con láser, talla 38,5. Pieza única de segunda mano. 600 €. Disponible en Vinted y en nuestra tienda de Ruzafa (Valencia), abierta todos los días de 10 a 20 h. #diorvintage #botinesvintage #modavintage",
+  "pinterestData": {
+   "boardId": "Botas vintage",
+   "pinTitle": "Botines Christian Dior vintage de plataforma en piel calada, talla 38,5",
+   "pinLink": "https://www.vinted.es/items/10309553952-christian-dior-laser-cut-leather-platform-ankle-boots-size-385",
+   "pinNewFormat": true
+  }
+ }
+}
