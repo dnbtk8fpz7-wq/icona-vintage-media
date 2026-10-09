@@ -17,10 +17,10 @@
   "extra": "",
   "background": "original",
   "status": "scheduled",
-  "cost": null,
   "sold_date": null,
   "sold_channel": null,
-  "photo": "image9"
+  "photo": "image9",
+  "last_confirmed": "2026-10-10"
  },
  {
   "n": 2,
@@ -40,10 +40,10 @@
   "extra": "",
   "background": "original",
   "status": "scheduled",
-  "cost": null,
   "sold_date": null,
   "sold_channel": null,
-  "photo": "image1"
+  "photo": "image1",
+  "last_confirmed": "2026-10-10"
  },
  {
   "n": 3,
@@ -63,10 +63,10 @@
   "extra": "",
   "background": "original",
   "status": "scheduled",
-  "cost": null,
   "sold_date": null,
   "sold_channel": null,
-  "photo": "image8"
+  "photo": "image8",
+  "last_confirmed": "2026-10-10"
  },
  {
   "n": 4,
@@ -86,10 +86,10 @@
   "extra": "Hoy es festivo y abrimos igualmente de 10:00 a 20:00.",
   "background": "original",
   "status": "scheduled",
-  "cost": null,
   "sold_date": null,
   "sold_channel": null,
-  "photo": "image4"
+  "photo": "image4",
+  "last_confirmed": "2026-10-10"
  },
  {
   "n": 5,
@@ -109,10 +109,10 @@
   "extra": "",
   "background": "original",
   "status": "scheduled",
-  "cost": null,
   "sold_date": null,
   "sold_channel": null,
-  "photo": "image3"
+  "photo": "image3",
+  "last_confirmed": "2026-10-10"
  },
  {
   "n": 6,
@@ -132,10 +132,10 @@
   "extra": "",
   "background": "original",
   "status": "scheduled",
-  "cost": null,
   "sold_date": null,
   "sold_channel": null,
-  "photo": "image7"
+  "photo": "image7",
+  "last_confirmed": "2026-10-10"
  },
  {
   "n": 7,
@@ -155,10 +155,10 @@
   "extra": "",
   "background": "studio",
   "status": "scheduled",
-  "cost": null,
   "sold_date": null,
   "sold_channel": null,
-  "photo": "image5"
+  "photo": "image5",
+  "last_confirmed": "2026-10-10"
  },
  {
   "n": 8,
@@ -178,10 +178,10 @@
   "extra": "",
   "background": "original",
   "status": "scheduled",
-  "cost": null,
   "sold_date": null,
   "sold_channel": null,
-  "photo": "image6"
+  "photo": "image6",
+  "last_confirmed": "2026-10-10"
  },
  {
   "n": 9,
@@ -201,10 +201,10 @@
   "extra": "",
   "background": "studio",
   "status": "scheduled",
-  "cost": null,
   "sold_date": null,
   "sold_channel": null,
-  "photo": "image2"
+  "photo": "image2",
+  "last_confirmed": "2026-10-10"
  },
  {
   "n": 10,
@@ -224,9 +224,9 @@
   "extra": "",
   "background": "original",
   "status": "scheduled",
-  "cost": null,
   "sold_date": null,
   "sold_channel": null,
-  "photo": "image10"
+  "photo": "image10",
+  "last_confirmed": "2026-10-10"
  }
 ]
