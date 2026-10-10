@@ -42,3 +42,5 @@ Bank holidays: the shop opens anyway; add an `extra` note ("Hoy es festivo y abr
 ## Periodic checks (scheduled tasks, see the user's scheduled tasks list)
 - Weekly (Fri): queue has ≥ 7 days ahead? failed posts? sold items? → asks the user for the next batch when short.
 - 1st and 15th: performance + health review. Suggest, never change strategy by itself.
+- 8th and 22nd: competitor and inspiration scan (read-only). Metricool Instagram/Facebook "competitors" analytics for brand 7281190 (fields IGCO02, IGCO03, IGCO07–IGCO10, IGCO12; empty until competitors are added in the Metricool app), plus WebSearch for new vintage shops, local press and markets in Valencia. Suggest ideas, don't change strategy. Competitor notes live in the Project doc `claude/icona-competitors-and-ideas.md`, not in this public repo.
+- Instagram/TikTok profile pages can only be fetched with the user's approval; never scrape or use paid tools.
