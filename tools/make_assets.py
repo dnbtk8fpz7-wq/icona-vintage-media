@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "icona-assets") + "/"
 PHOTOS = os.path.join(ROOT, "photos") + "/"   # put the original photos here (not committed)
-MUSIC = None                                   # path to a 7 s clip (wav/mp3/m4a); set with --music
+MUSIC = None                                   # --music FILE (one 7 s clip) or DIR (pool of 7 s clips, one per item: pool[n % len])
 FD = "/usr/share/fonts/truetype/freefont/"
 BG = (88, 26, 43)
 CREAM = (243, 233, 220)
@@ -29,7 +29,7 @@ def font(name, size):
 def _load_items():
     d = json.load(open(os.path.join(ROOT, "data", "items.json"), encoding="utf-8"))
     return {i["n"]: dict(img=i.get("photo", i["slug"]), brand=i["brand_upper"], desc=i["desc"],
-                         price=str(i["price"]), slug=i["slug"]) for i in d}
+                         price=str(i["price"]), slug=i["slug"], n=i["n"]) for i in d}
 
 
 ITEMS = _load_items()
@@ -184,7 +184,7 @@ def build_reel(it, path, seconds=7.0, fps=30):
     cmd = [
         "ffmpeg", "-y", "-loglevel", "error",
         "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-",
-        *(["-i", MUSIC] if MUSIC else ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo"]),
+        *(["-i", music_for(it)] if MUSIC else ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo"]),
         "-c:v", "libx264", "-preset", "medium", "-crf", "24", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "128k" if MUSIC else "64k", "-shortest", "-movflags", "+faststart", path,
     ]
@@ -219,6 +219,16 @@ def build_reel(it, path, seconds=7.0, fps=30):
         proc.stdin.write(frame.tobytes())
     proc.stdin.close()
     proc.wait()
+
+
+def music_for(it):
+    """Single file, or a directory pool: clip chosen by item number so the choice is stable."""
+    if os.path.isdir(MUSIC):
+        pool = sorted(f for f in os.listdir(MUSIC) if f.lower().endswith((".wav", ".mp3", ".m4a")))
+        if not pool:
+            sys.exit(f"no audio clips in {MUSIC}")
+        return os.path.join(MUSIC, pool[(int(it["n"]) - 1) % len(pool)])
+    return MUSIC
 
 
 def main():

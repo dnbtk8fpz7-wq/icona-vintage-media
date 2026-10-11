@@ -26,9 +26,11 @@ Goal: followers, engagement and SALES at ZERO cost. Captions are in Spanish.
 - `icona-assets/` — generated media. `*_reel-9x16-music.mp4` is the version to publish.
 
 ## Music
-Track: Pixabay "Bossa Nova Cafe – Morning Breeze" by Alex Morgan (id 573876), approved by the user for ALL future Icona reels. Pixabay licence: fine in videos, never publish the raw file.
-7 s clip = source from 0:24 with 0.4 s fade-in, 1.2 s fade-out, loudnorm −15 LUFS. Recover the clip from any existing reel: `ffmpeg -i icona-assets/item07-coach-swinger_reel-9x16-music.mp4 -vn -ar 44100 -ac 2 clip.wav`. For a different length ask the user to re-attach the mp3 (the file is not stored anywhere public).
-Risk: a platform may flag a Pixabay track. If a copyright notice appears, the user disputes it with the Pixabay download page; ask the user for 2–3 more tracks to rotate (a pool).
+Pool of 4 Pixabay tracks, all approved by the user for ALL future Icona reels (Pixabay licence: fine in videos, never publish the raw file):
+1. "Bossa Nova Cafe – Morning Breeze", Alex Morgan (573876) — used by the 30 reels queued 11–20 Oct
+2. "Little Miss Nova", faespencer (204158) · 3. "Bossa Nova Jazz Piano Summer Cafe", Denis Pavlov (398166) · 4. "Lounge Elevator Background", TuneTank (347361)
+Clips (7 s, afade in 0.4 s / out 1.2 s at 5.8 s, loudnorm −15 LUFS, 44.1 kHz stereo) are stored privately, NOT in this repo. `--music DIR` picks `clip[(n−1) % 4]` by item number (sorted filenames); `--music FILE` uses one clip. Recover a clip from any existing reel: `ffmpeg -i icona-assets/item07-coach-swinger_reel-9x16-music.mp4 -vn -ar 44100 -ac 2 clip.wav`; for the three new tracks ask the user to re-attach the mp3s (start offsets: Little Miss Nova 70 s, Denis Pavlov 431 s, TuneTank 97 s; first track 24 s).
+Risk: a platform may flag a Pixabay track. If a copyright notice appears, drop that track from the pool, the user disputes it with the Pixabay download page, and ask for 2–3 more tracks.
 
 ## New batch workflow (about 20 min of work per 10 items)
 1. User sends photos + name + price + Vinted link per item (Word table or message). Save photos in `photos/` (not committed).
