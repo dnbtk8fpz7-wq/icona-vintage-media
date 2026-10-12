@@ -1,5 +1,7 @@
 # Icona Vintage Valencia — content pipeline (read me first)
 
+> **PAUSED since 2026-10-12 (user request): all unpublished posts are drafts. Do not publish, un-draft or schedule anything until the user explicitly says to proceed.** See data/manual_changes.json.
+
 Shop: second-hand / vintage clothing, Carrer del Músic Padilla, 2 (Ruzafa), 46005 València. Open every day 10:00–20:00 (Valencia time).
 Online shop for now: Vinted https://www.vinted.es/member/125675678 (items are unique pieces — "pieza única").
 Accounts: Instagram @iconavintagesecondhand · TikTok @iconavintage · Facebook Page · Pinterest @iconavintage.

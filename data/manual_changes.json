@@ -1,1 +1,10 @@
-{"note":"Changes the user made by hand in Metricool/apps. These win over the plan.","changes":[]}
+{
+ "note": "Changes the user made by hand in Metricool/apps. These win over the plan.",
+ "changes": [
+  {
+   "date": "2026-10-12",
+   "what": "User asked to STOP all social posts until they make changes. All 25 unpublished queued posts (12 Oct 18:00 pin, 13-20 Oct reels/FB reels/pins) set to draft:true via updateScheduledPost (uuids unchanged). 12 Oct 10:00 posts had already published.",
+   "handling": "Do NOT un-draft, re-create or re-schedule anything until the user says to proceed. check.py --diff will show drafts; that is expected. Items stay status 'scheduled' in items.json until the user decides."
+  }
+ ]
+}
