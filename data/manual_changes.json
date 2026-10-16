@@ -5,6 +5,11 @@
    "date": "2026-10-12",
    "what": "User asked to STOP all social posts until they make changes. All 25 unpublished queued posts (12 Oct 18:00 pin, 13-20 Oct reels/FB reels/pins) set to draft:true via updateScheduledPost (uuids unchanged). 12 Oct 10:00 posts had already published.",
    "handling": "Do NOT un-draft, re-create or re-schedule anything until the user says to proceed. check.py --diff will show drafts; that is expected. Items stay status 'scheduled' in items.json until the user decides."
+  },
+  {
+   "date": "2026-10-16",
+   "what": "Weekly check: posting still paused. The drafts dated 13-16 Oct 10:00/18:00 (item 9, 2, 3, 8 and the 12 Oct 18:00 pin) have passed their time without publishing; they are drafts, not failures. 17-20 Oct posts are drafts too.",
+   "handling": "On resume, the passed drafts must be re-dated or dropped (user decides); do not publish old dates. No deletions or edits by the user were found: every planned uuid is in the queue."
   }
  ]
 }
