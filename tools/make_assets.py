@@ -6,9 +6,12 @@ OUT = os.path.join(ROOT, "icona-assets") + "/"
 PHOTOS = os.path.join(ROOT, "photos") + "/"   # put the original photos here (not committed)
 MUSIC = None                                   # --music FILE (one 7 s clip) or DIR (pool of 7 s clips, one per item: pool[n % len])
 FD = "/usr/share/fonts/truetype/freefont/"
-BG = (88, 26, 43)
-CREAM = (243, 233, 220)
-GOLD = (201, 169, 110)
+# Brand palette B (locked 2026-10-17): bottle green, ivory, dusty pink, brass, oxblood.
+BG = (31, 74, 55)        # #1F4A37 bottle green: backgrounds, bands
+CREAM = (244, 234, 213)  # #F4EAD5 ivory: titles, pills
+GOLD = (184, 137, 59)    # #B8893B brass: frame lines, price badge fill
+PINK = (232, 167, 176)   # #E8A7B0 dusty pink: sub-lines and CTAs on green (4.8:1)
+OXBLOOD = (122, 34, 48)  # #7A2230 text on ivory/brass (pill text, badge text and ring)
 
 FONTS = {
     "SERIF": FD + "FreeSerif.ttf",
@@ -78,9 +81,9 @@ def sprite_badge(text, r):
     d = ImageDraw.Draw(im)
     c = size // 2
     d.ellipse((c - r * S, c - r * S, c + r * S, c + r * S), fill=GOLD + (255,))
-    d.ellipse((c - (r - 9) * S, c - (r - 9) * S, c + (r - 9) * S, c + (r - 9) * S), outline=BG + (255,), width=3 * S)
+    d.ellipse((c - (r - 9) * S, c - (r - 9) * S, c + (r - 9) * S, c + (r - 9) * S), outline=OXBLOOD + (255,), width=3 * S)
     f = fit_font("SERIFB", text, 1.35 * r * S, int(r * S * 0.75))
-    d.text((c, c), text, font=f, fill=BG + (255,), anchor="mm")
+    d.text((c, c), text, font=f, fill=OXBLOOD + (255,), anchor="mm")
     return im.resize((size // S, size // S), Image.LANCZOS)
 
 
@@ -93,7 +96,7 @@ def sprite_pill(text, size_px=30, tracking=3, pad=(26, 14)):
     im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
     d.rounded_rectangle((0, 0, w - 1, h - 1), radius=h // 2, fill=CREAM + (255,))
-    spaced(d, text, f, tracking * S, w / 2, h / 2, BG)
+    spaced(d, text, f, tracking * S, w / 2, h / 2, OXBLOOD)
     return im.resize((w // S, h // S), Image.LANCZOS)
 
 
@@ -123,7 +126,7 @@ def build_post(it):
     f1 = fit_font("SERIFB", it["brand"], 940, 50)
     spaced(d, it["brand"], f1, 4, W / 2, 1272, CREAM)
     f2 = fit_font("SANS", it["desc"], 960, 27)
-    d.text((W / 2, 1316), it["desc"] + "  ·  Ruzafa, València", font=fit_font("SANS", it["desc"] + "  ·  Ruzafa, València", 980, 26), fill=GOLD, anchor="mm")
+    d.text((W / 2, 1316), it["desc"] + "  ·  Ruzafa, València", font=fit_font("SANS", it["desc"] + "  ·  Ruzafa, València", 980, 26), fill=PINK, anchor="mm")
     return img
 
 
@@ -138,7 +141,7 @@ def build_pin(it):
     line1 = it["brand"] + "  ·  " + price_txt(it)
     d.text((W / 2, 1333 + 52), line1, font=fit_font("SERIFB", line1, 940, 56), fill=CREAM, anchor="mm")
     line2 = "Ver en Vinted  ·  Icona Vintage, Ruzafa (Valencia)"
-    d.text((W / 2, 1333 + 118), line2, font=fit_font("SANS", line2, 940, 30), fill=GOLD, anchor="mm")
+    d.text((W / 2, 1333 + 118), line2, font=fit_font("SANS", line2, 940, 30), fill=PINK, anchor="mm")
     return img
 
 
@@ -155,7 +158,7 @@ def reel_backgrounds(it):
         d.line((W / 2 - 150, ry, W / 2 - 14, ry), fill=GOLD, width=2)
         d.line((W / 2 + 14, ry, W / 2 + 150, ry), fill=GOLD, width=2)
         d.polygon([(W / 2, ry - 7), (W / 2 + 7, ry), (W / 2, ry + 7), (W / 2 - 7, ry)], fill=GOLD)
-        spaced(d, "VINTAGE · VALENCIA", font("SERIF", 28), 9, W / 2, 175, GOLD)
+        spaced(d, "VINTAGE · VALENCIA", font("SERIF", 28), 9, W / 2, 175, PINK)
         f1 = fit_font("SERIFB", it["brand"], 980, 66)
         spaced(d, it["brand"], f1, 5, W / 2, 1462, CREAM)
         fd = font("SANS", 34)
@@ -164,7 +167,7 @@ def reel_backgrounds(it):
         for ln in lines:
             d.text((W / 2, y), ln, font=fd, fill=CREAM, anchor="mm")
             y += 38
-        d.text((W / 2, 1602), cta, font=fit_font("SANSB", cta, 980, 30), fill=GOLD, anchor="mm")
+        d.text((W / 2, 1602), cta, font=fit_font("SANSB", cta, 980, 30), fill=PINK, anchor="mm")
         outs.append(bg)
     return outs
 

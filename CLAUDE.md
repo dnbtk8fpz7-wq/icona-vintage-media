@@ -7,6 +7,10 @@ Online shop for now: Vinted https://www.vinted.es/member/125675678 (items are un
 Accounts: Instagram @iconavintagesecondhand · TikTok @iconavintage · Facebook Page · Pinterest @iconavintage.
 Goal: followers, engagement and SALES at ZERO cost. Captions are in Spanish.
 
+## Brand colors (palette B, chosen by the user 2026-10-17: "Rosa empolvado y verde botella")
+Bottle green #1F4A37 (backgrounds, bands) · ivory #F4EAD5 (titles, pills) · dusty pink #E8A7B0 (sub-lines/CTAs on green; never pink text on ivory, contrast ~1.5:1) · brass #B8893B (frame lines, price badge) · oxblood #7A2230 (text on ivory/brass).
+Rules: never recolor or edit the item photo itself (only frames, bands, text, pills, badges around it). `tools/make_assets.py` already uses the palette; `tools/rebrand.py` retrofitted the already-built pins/reels of items 1,2,3,5,6,8,9,10 on 2026-10-17 (items 4 and 7 were published in the old burgundy look). The profile picture is fixed separately (pink text + green outline) and lives outside the repo.
+
 ## Hard rules (never break)
 1. Metricool: ONLY brand **7281190 "Icona Vintage Valencia"**. Never read, post or edit brand 7298177 ("Schmoe's POV") or its repos
    (schmoes-pov, schmoes-pov-media). Before any write, call getBrandSettings and confirm the blogId/name you are about to use.
