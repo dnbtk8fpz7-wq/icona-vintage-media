@@ -10,6 +10,11 @@
    "date": "2026-10-16",
    "what": "Weekly check: posting still paused. The drafts dated 13-16 Oct 10:00/18:00 (item 9, 2, 3, 8 and the 12 Oct 18:00 pin) have passed their time without publishing; they are drafts, not failures. 17-20 Oct posts are drafts too.",
    "handling": "On resume, the passed drafts must be re-dated or dropped (user decides); do not publish old dates. No deletions or edits by the user were found: every planned uuid is in the queue."
+  },
+  {
+   "date": "2026-10-17",
+   "what": "User chose brand palette B and asked that all remaining queued posts carry the new colors (item photos never edited).",
+   "handling": "Pins and reels of items 1,2,3,5,6,8,9,10 rebuilt with tools/rebrand.py (photo window untouched). The 9 drafts dated 18-20 Oct (items 5,6,1) got the new media via updateScheduledPost with draft:true kept; uuids unchanged. Posting stays paused."
   }
  ]
 }
