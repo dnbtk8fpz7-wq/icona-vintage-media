@@ -15,6 +15,11 @@
    "date": "2026-10-17",
    "what": "User chose brand palette B and asked that all remaining queued posts carry the new colors (item photos never edited).",
    "handling": "Pins and reels of items 1,2,3,5,6,8,9,10 rebuilt with tools/rebrand.py (photo window untouched). The 9 drafts dated 18-20 Oct (items 5,6,1) got the new media via updateScheduledPost with draft:true kept; uuids unchanged. Posting stays paused."
+  },
+  {
+   "date": "2026-10-23",
+   "what": "Weekly check (read-only): posting still paused. Queue 23 Oct-13 Nov is empty. All 25 remaining posts (16-20 Oct) are still drafts and their dates have passed; nothing deleted or edited by the user, nothing failed (drafts, not failures). No posts published since 12 Oct.",
+   "handling": "Needs user decision: resume (then re-date the 10 pieces and/or add a new batch) or keep paused. Nothing changed by this run."
   }
  ]
 }
