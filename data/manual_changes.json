@@ -20,6 +20,11 @@
    "date": "2026-10-23",
    "what": "Weekly check (read-only): posting still paused. Queue 23 Oct-13 Nov is empty. All 25 remaining posts (16-20 Oct) are still drafts and their dates have passed; nothing deleted or edited by the user, nothing failed (drafts, not failures). No posts published since 12 Oct.",
    "handling": "Needs user decision: resume (then re-date the 10 pieces and/or add a new batch) or keep paused. Nothing changed by this run."
+  },
+  {
+   "date": "2026-10-30",
+   "what": "Weekly check (read-only): posting still paused since 12 Oct. Metricool queue 30 Oct-20 Nov is empty and nothing was scheduled/published in the past 7 days (no failures). Last known drafts (16-20 Oct) are no longer returned by the scheduled list.",
+   "handling": "Needs user decision: resume with a new batch (about 10 items) or keep paused. Nothing changed by this run."
   }
  ]
 }
