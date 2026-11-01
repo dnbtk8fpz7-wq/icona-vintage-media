@@ -25,6 +25,11 @@
    "date": "2026-10-30",
    "what": "Weekly check (read-only): posting still paused since 12 Oct. Metricool queue 30 Oct-20 Nov is empty and nothing was scheduled/published in the past 7 days (no failures). Last known drafts (16-20 Oct) are no longer returned by the scheduled list.",
    "handling": "Needs user decision: resume with a new batch (about 10 items) or keep paused. Nothing changed by this run."
+  },
+  {
+   "date": "2026-11-01",
+   "what": "Twice-monthly review (read-only): posting still paused since 12 Oct. getBrandSettings: Instagram iconavintagesecondhand, TikTok iconavintage, Facebook Page 1312171308655120 and Pinterest iconavintage all still connected. Queue 17 Oct-22 Nov holds only the 12 drafts dated 17-20 Oct (all draft:true, time passed, none edited/deleted, none failed); runway 0 days. No posts published by hand in the 15 days. No copyright/muting signal visible via API.",
+   "handling": "Needs user decision: resume with a new batch (re-date or drop the 12 passed drafts) or keep paused. Nothing changed by this run."
   }
  ]
 }
